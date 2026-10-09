@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#161616">
+  <meta name="description" content="Проектирую цифровые продукты для банковской, инвестиционной и мобильной сфер. Кейсы и мой подход к работе.">
+  <title>Владимир Никитин — Портфолио цифровых продуктов</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/base.css?v=20261010-manrope-brand-1">
+  <link rel="stylesheet" href="assets/css/index.css?v=20261010-release-2">
+  <script src="assets/js/index.js?v=20261010-page-grid-1" defer></script>
+  <script src="assets/js/page-grid.js?v=20261010-cursor-grid-pulses-1" defer></script>
+</head>
+<body class="home-page has-page-grid">
+  <div class="page-grid" aria-hidden="true"><canvas class="page-grid-canvas"></canvas></div>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" data-motion="top" style="--motion-delay: 30ms">
+        <span class="brand-name">Владимир Никитин</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav" data-motion="top" style="--motion-delay: 70ms">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация" data-motion="top" style="--motion-delay: 100ms">
+        <a href="#work">Проекты</a>
+        <a href="#approach">Подход</a>
+        <a href="#about">Обо мне</a>
+        <a href="#contact">Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title" data-motion="left" style="--motion-delay: 110ms">Сложные продукты<br class="hero-break"> <span class="hero-muted">становятся понятными.</span></h1>
+        <p class="hero-description" data-motion="left" style="--motion-delay: 200ms">Проектирую цифровые продукты для банковской и инвестиционной сфер. Соединяю пользовательские задачи, продуктовую логику и цельные интерфейсы.</p>
+        <div class="hero-actions" data-motion="left" style="--motion-delay: 290ms">
+          <a class="button-primary" href="#work">Смотреть проекты <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="button-secondary" href="#approach">Мой подход <span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-domains" data-motion="left" style="--motion-delay: 370ms">Финтех <span>·</span> Банкинг <span>·</span> Мобильность</p>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section-heading">
+          <h2 id="work-title" data-motion="left">Проекты на стыке логики и интерфейса.</h2>
+          <p data-motion="right" style="--motion-delay: 90ms">Четыре продукта — от банковских сценариев и финансовых активов до управления электромобилем.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Фильтр проектов" data-motion="bottom" style="--motion-delay: 60ms">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Все проекты</button>
+          <button class="filter-button" type="button" data-filter="finance" aria-pressed="false">Финансовые продукты</button>
+          <button class="filter-button" type="button" data-filter="mobility" aria-pressed="false">Мобильность</button>
+          <button class="filter-button" type="button" data-filter="b2b" aria-pressed="false">B2B</button>
+        </div>
+        <p class="visually-hidden" id="work-status" role="status" aria-live="polite" aria-atomic="true"></p>
+
+        <div class="work-grid">
+          <a class="project-card featured" data-category="mobility" href="case.html?project=atom">
+            <figure class="project-art" data-motion="left">
+              <picture>
+                <source srcset="assets/cases/atom-3d.webp" type="image/webp">
+                <img src="assets/cases/atom-3d.png" width="1980" height="1500" alt="3D-визуализация электромобиля ATOM" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>ATOM · Мобильное приложение</figcaption>
+            </figure>
+            <div class="project-info" data-motion="right" style="--motion-delay: 100ms">
+              <p class="project-category">Мобильность · Мобильное приложение</p>
+              <h3><span class="project-name">ATOM</span> — приложение для электромобиля</h3>
+              <p class="project-description">Спроектировал ключевые сценарии владения и обслуживания: доступ к автомобилю, зарядку, профиль и сервис.</p>
+              <div class="project-tags"><span>Product design</span><span>UX / UI</span><span>Design system</span></div>
+              <span class="project-link">Открыть кейс <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+
+          <a class="project-card keycount-card" data-category="finance" href="case.html?project=keycount">
+            <figure class="project-art" data-motion="left">
+              <picture>
+                <source srcset="assets/cases/keycount-exchanges.webp" type="image/webp">
+                <img src="assets/cases/keycount-exchanges.png" width="1980" height="1500" alt="Экраны Keycount для обзора криптоактивов" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Keycount · Обзор финансовых активов</figcaption>
+            </figure>
+            <div class="project-info" data-motion="right" style="--motion-delay: 90ms">
+              <p class="project-category">Финтех · Продукт с нуля</p>
+              <h3><span class="project-name">Keycount</span> — <span class="keycount-title-detail">финансовый суперапп</span></h3>
+              <p class="project-description">Спроектировал архитектуру и часть MVP для обзора банковских карт, криптобирж и кошельков.</p>
+              <div class="project-tags"><span>Information architecture</span><span>MVP</span></div>
+              <span class="project-link">Открыть кейс <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+
+          <a class="project-card bakong-card" data-category="finance" href="case.html?project=bakong">
+            <figure class="project-art" data-motion="left">
+              <picture>
+                <source srcset="assets/cases/bakong-home-crop.webp" type="image/webp">
+                <img src="assets/cases/bakong-home-crop.png" width="825" height="690" alt="Концепт главного экрана мобильного банковского интерфейса Bakong" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Bakong · Мобильный банкинг</figcaption>
+            </figure>
+            <div class="project-info" data-motion="right" style="--motion-delay: 90ms">
+              <p class="project-category">Банкинг · Редизайн</p>
+              <h3><span class="project-name">Bakong</span> — редизайн мобильного банкинга</h3>
+              <p class="project-description">Исследовал банковские сценарии, проверил гипотезы и обновил экраны и библиотеку компонентов.</p>
+              <div class="project-tags"><span>UX research</span><span>Mobile banking</span></div>
+              <span class="project-link">Открыть кейс <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+
+          <a class="project-card modul-card" data-category="b2b" href="case.html?project=modulbank">
+            <figure class="project-art" data-motion="left">
+              <picture>
+                <source srcset="assets/cases/modul-auth.webp" type="image/webp">
+                <img src="assets/cases/modul-auth.png" width="1980" height="1500" alt="Экран авторизации и регистрации в кабинете Модуль Банка" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Модуль Банк · Внутренний веб-сервис</figcaption>
+            </figure>
+            <div class="project-info" data-motion="right" style="--motion-delay: 100ms">
+              <p class="project-category">B2B · Веб-сервис</p>
+              <h3><span class="project-name">Модуль Банк</span> — кабинет сотрудника</h3>
+              <p class="project-description">Спроектировал кабинет сотрудника: заявки на банковские продукты и основные рабочие сценарии.</p>
+              <div class="project-tags"><span>Internal tools</span><span>UX / UI</span></div>
+              <span class="project-link">Открыть кейс <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach" aria-labelledby="approach-title">
+      <div class="shell approach-layout">
+        <div>
+          <h2 class="approach-title" id="approach-title" data-motion="left">Сначала понять задачу.<span><strong>Потом</strong> — упростить.</span></h2>
+          <p class="approach-intro" data-motion="left" style="--motion-delay: 100ms">Сильный интерфейс начинается не с пикселей, а с правильного вопроса, ясной структуры и внимания к тому, как люди действительно пользуются продуктом.</p>
+        </div>
+        <div class="principles">
+          <article class="principle" data-motion="right" style="--motion-delay: 0ms"><h3>Понять контекст</h3><p>Разобраться в пользователях, целях продукта, ограничениях и критериях успеха.</p></article>
+          <article class="principle" data-motion="right" style="--motion-delay: 70ms"><h3>Собрать логику</h3><p>Уточнить сценарии, расставить приоритеты и превратить сложное в понятную структуру.</p></article>
+          <article class="principle" data-motion="right" style="--motion-delay: 140ms"><h3>Проверить решения</h3><p>Прототипировать, обсуждать с командой и искать слабые места до разработки.</p></article>
+          <article class="principle" data-motion="right" style="--motion-delay: 210ms"><h3>Довести до системы</h3><p>Сделать интерфейс цельным, доступным для развития и последовательным в деталях.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="shell about-layout">
+        <h2 class="about-lead" id="about-title" data-motion="left">Не просто сделать красиво.<span><strong>Упростить</strong> сложное.</span></h2>
+        <div class="about-copy" data-motion="right" style="--motion-delay: 100ms">
+          <p>Мой опыт связан с банковскими и инвестиционными технологиями. Работал с командами Dex, Soramitsu и Atom.</p>
+          <p>Веду работу от исследования и пользовательских сценариев до прототипов, финальных интерфейсов и дизайн-систем.</p>
+          <p>Мой подход — AI Native: ИИ — естественная часть проектного процесса, а в центре остаются задачи людей и логика продукта.</p>
+          <div class="about-domains">Финтех <span>·</span> Банкинг <span>·</span> Мобильность</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-layout">
+        <h2 id="contact-title" data-motion="left"><span class="contact-question">Есть задача?</span><span class="contact-prompt">Давайте <span class="contact-highlight">обсудим.</span></span></h2>
+        <p class="contact-copy" data-motion="left" style="--motion-delay: 100ms">По вопросам сотрудничества и новых проектов — напишите напрямую.</p>
+        <a class="button-primary contact-primary" href="mailto:ux.nikitin@gmail.com" data-motion="right" style="--motion-delay: 130ms">Написать на email <span class="arrow" aria-hidden="true">↗</span></a>
+        <div class="contact-alternatives" data-motion="right" style="--motion-delay: 180ms">
+          <a class="contact-secondary" href="mailto:ux.nikitin@gmail.com">ux.nikitin@gmail.com ↗</a>
+          <a class="contact-secondary" href="https://t.me/niki7in" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell site-footer">
+    <p>© 2026 · Владимир Никитин</p>
+    <p class="footer-name">Сделано с ясностью</p>
+  </footer>
+</body>
+</html>
