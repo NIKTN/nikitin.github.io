@@ -115,10 +115,10 @@
   });
 
   const darkPreviewByOriginal = Object.freeze({
-    "assets/cases/atom-3d.png": "assets/cases/atom-3d-card.webp",
-    "assets/cases/keycount-exchanges.png": "assets/cases/keycount-exchanges-card.webp",
-    "assets/cases/bakong-home-crop.png": "assets/cases/bakong-home-crop-card.webp",
-    "assets/cases/modul-auth.png": "assets/cases/modul-auth-card.webp"
+    "assets/cases/atom-3d.png": "assets/cases/atom-3d-card-clean.webp",
+    "assets/cases/keycount-exchanges.png": "assets/cases/keycount-exchanges-card-clean.webp",
+    "assets/cases/bakong-home-crop.png": "assets/cases/bakong-home-crop-card-clean.webp",
+    "assets/cases/modul-auth.png": "assets/cases/modul-auth-card-clean.webp"
   });
 
   const byId = id => {

@@ -308,7 +308,7 @@
     .case-category { margin-top: 18px; color: var(--accent); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; }
     .case-deck { max-width: 68ch; margin-top: 16px; color: var(--muted); font-size: clamp(16px, 1.65vw, 20px); line-height: 1.75; }
     .case-hero-media { margin-top: clamp(34px, 5vw, 58px); padding: 12px; border: 1px solid rgba(255,255,255,.09); border-radius: 20px; background: var(--surface-raised); }
-    .case-hero-media img { border-radius: 12px; background: var(--surface-raised); }
+    .case-hero-media img { border-radius: 12px; background: #3b3b3b; }
     .case-hero-media figcaption { right: 22px; bottom: 22px; padding: 9px 13px; border: 1px solid rgba(255,255,255,.09); border-radius: 9px; color: var(--ink); background: rgba(22,22,22,.94); letter-spacing: .015em; text-transform: none; }
     .meta-grid { margin-top: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,.09); border-radius: 16px; background: var(--surface-raised); }
     .meta-item { padding: 18px 18px; border-color: var(--line); }
