@@ -436,6 +436,9 @@
     .process-step p { max-width: 36ch; font-size: 15px; font-weight: 400; line-height: 1.55; letter-spacing: 0; }
     .measurement-box p { max-width: 60ch; font-size: 14px; font-weight: 400; line-height: 1.55; letter-spacing: 0; }
     .gallery-card figcaption { font-size: 13px; font-weight: 400; line-height: 1.45; letter-spacing: 0; }
+    .gallery-card.screen .gallery-open { display: grid; place-items: center; min-height: 540px; padding: 24px; }
+    .gallery-card.screen .gallery-open img { width: min(100%, 375px); }
+    .gallery-description { max-width: 72ch; margin: 0; padding: 0 18px 20px; color: var(--muted); font-size: 14px; line-height: 1.55; }
     .zoom-hint { font-size: 12px; font-weight: 500; line-height: 1.4; letter-spacing: 0; }
     .refs a, .case-navigation strong { font-size: 14px; font-weight: 500; line-height: 1.4; letter-spacing: 0; }
     .case-navigation small { font-size: 12px; font-weight: 400; line-height: 1.4; letter-spacing: 0; }
@@ -455,6 +458,8 @@
       .section-heading p, .gallery-heading p, .role-list li, .process-step p { font-size: 14px; }
       .meta-value { font-size: 13px; }
       .gallery-card figcaption { font-size: 12px; }
+      .gallery-card.screen .gallery-open { min-height: 0; padding: 14px; }
+      .gallery-description { padding: 0 14px 16px; font-size: 13px; }
       .refs a { min-height: 44px; }
       .site-footer { font-size: 12px; }
     }
