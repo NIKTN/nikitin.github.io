@@ -114,6 +114,13 @@
     "assets/cases/modul-auth.png": [1980, 1500]
   });
 
+  const darkPreviewByOriginal = Object.freeze({
+    "assets/cases/atom-3d.png": "assets/cases/atom-3d-card.webp",
+    "assets/cases/keycount-exchanges.png": "assets/cases/keycount-exchanges-card.webp",
+    "assets/cases/bakong-home-crop.png": "assets/cases/bakong-home-crop-card.webp",
+    "assets/cases/modul-auth.png": "assets/cases/modul-auth-card.webp"
+  });
+
   const byId = id => {
     const element = document.getElementById(id);
     if (!element) throw new Error(`Required case element #${id} was not found.`);
@@ -137,7 +144,7 @@
       return;
     }
     image.addEventListener("error", () => { image.src = originalSrc; }, { once: true });
-    image.src = originalSrc.replace(/\.png$/, ".webp");
+    image.src = darkPreviewByOriginal[originalSrc] || originalSrc.replace(/\.png$/, ".webp");
   };
 
   const setProjectTitle = (element, title, name) => {
