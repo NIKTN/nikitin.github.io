@@ -588,10 +588,9 @@
     }
     .contact h2 .contact-prompt {
       display: block;
-      color: var(--accent);
+      color: var(--ink);
       text-wrap: balance;
     }
-    .contact h2 .contact-highlight { color: var(--accent); }
     .contact-copy {
       grid-column: 1;
       grid-row: 2;
