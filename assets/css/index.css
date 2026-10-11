@@ -408,12 +408,12 @@
       overflow: hidden;
       border: 1px solid rgba(255,255,255,.09);
       border-radius: 20px;
-      background: var(--surface);
+      background: var(--surface-raised);
       transition: transform .42s var(--ease), border-color .3s var(--ease), background .3s var(--ease);
     }
     .project-card.featured { padding-bottom: 14px; }
     .project-card.modul-card { padding-top: 14px; }
-    .project-card:hover { transform: translateY(-4px); border-color: rgba(220,247,99,.46); background: var(--surface-hover); }
+    .project-card:hover { transform: translateY(-4px); border-color: rgba(220,247,99,.46); background: var(--surface-raised-hover); }
     .project-card:focus-visible { outline-offset: 5px; }
     .project-art { border-radius: 12px; background: var(--surface-raised); }
     .project-art img { transition: transform .72s var(--ease); }
@@ -440,11 +440,11 @@
     .project-card:hover .project-link { color: var(--accent-ink); border-color: var(--accent); background: var(--accent); }
     .project-card:hover .project-link span { color: var(--accent-ink); }
 
-    .principles { padding: 7px 18px; border: 1px solid rgba(255,255,255,.09); border-radius: 16px; background: var(--surface); }
+    .principles { padding: 7px 18px; border: 1px solid rgba(255,255,255,.09); border-radius: 16px; background: var(--surface-raised); }
     .principle { border-color: var(--line); }
     .principle h3 { font-weight: 550; }
     .principle p, .approach-intro, .about-copy p { color: var(--muted); }
-    .about-layout { padding: clamp(24px, 4vw, 52px); border: 1px solid rgba(255,255,255,.09); border-radius: 20px; background: var(--surface); }
+    .about-layout { padding: clamp(24px, 4vw, 52px); border: 1px solid rgba(255,255,255,.09); border-radius: 20px; background: var(--surface-raised); }
     .site-footer { border-top: 1px solid rgba(255,255,255,.09); }
 
     @media (max-width: 700px) {
@@ -563,7 +563,7 @@
       padding: clamp(32px, 4vw, 52px) clamp(28px, 4.6vw, 64px);
       border: 1px solid rgba(255,255,255,.09);
       border-radius: 20px;
-      background: var(--surface);
+      background: var(--surface-raised);
     }
     .contact h2 {
       grid-column: 1;
