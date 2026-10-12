@@ -81,7 +81,7 @@
       projectName: "Модуль Банк",
       title: "Модуль Банк — кабинет сотрудника",
       deck: "Внутренний веб-сервис для сотрудников банка: оформление заявок на банковские продукты и работа с данными по заявкам.",
-      hero: "assets/cases/modul-auth.png", heroAlt: "Экран регистрации в личном кабинете Модуль Банка", heroCaption: "Регистрация и вход в кабинет",
+      hero: "assets/cases/modul-registration-card.webp", heroAlt: "Экран регистрации в личном кабинете Модуль Банка", heroCaption: "Регистрация в кабинете",
       meta: [["Продукт", "Веб-сервис · личный кабинет"], ["Пользователи", "Сотрудники банка"], ["Моя роль", "UX/UI-дизайн всех сценариев"], ["Основа", "Техническое задание и дизайн-система"]],
       contextTitle: "Рабочее пространство для оформления банковских заявок",
       context: "Задача — создать личный кабинет, в котором сотрудники банка могут оформлять заявки на банковские продукты. В интерфейсе предусмотрены сценарии авторизации, работы с заявками и разделом сотрудников.",
@@ -91,7 +91,7 @@
       processIntro: "Разобрал требования, согласовал wireframes и затем подготовил финальный интерфейс.",
       process: [["01", "Требования", "Разобрал техническое задание и структуру банковского сервиса."], ["02", "Сценарии", "Собрал пользовательские потоки и прототипы ключевых действий."], ["03", "Wireframes", "Подготовил каркас экранов и согласовал его до визуальной детализации."], ["04", "UI", "Оформил UX/UI всех описанных сценариев по дизайн-системе."]],
       galleryIntro: "Показываю экран регистрации. Материалы с заявками и данными сотрудников не публикую: они содержат персональные сведения.",
-      gallery: [{src:"assets/cases/modul-auth.png",alt:"Экран регистрации сотрудника в кабинете Модуль Банка",caption:"Авторизация и регистрация сотрудника",wide:true}],
+      gallery: [{src:"assets/cases/modul-registration-card.webp",alt:"Экран регистрации сотрудника в кабинете Модуль Банка",caption:"Регистрация сотрудника",wide:true}],
       resultTitle: "Проработал UX/UI всех сценариев после согласования wireframes",
       result: "После утверждения wireframes спроектировал UX/UI всех описанных сценариев в рамках дизайн-системы. Числовые бизнес-результаты в открытом кейсе не представлены.",
       metricFact: "Описываю архитектуру и сценарии, показываю экран регистрации; продуктовые и операционные показатели не опубликованы.",
@@ -111,14 +111,13 @@
     "assets/cases/keycount-accounts.png": [1980, 1500],
     "assets/cases/keycount-exchanges.png": [1980, 1500],
     "assets/cases/keycount-userflow.png": [1980, 668],
-    "assets/cases/modul-auth.png": [1980, 1500]
+    "assets/cases/modul-registration-card.webp": [1980, 1500]
   });
 
   const darkPreviewByOriginal = Object.freeze({
     "assets/cases/atom-3d.png": "assets/cases/atom-3d-card-clean.webp",
     "assets/cases/keycount-exchanges.png": "assets/cases/keycount-exchanges-card-clean.webp",
-    "assets/cases/bakong-home-crop.png": "assets/cases/bakong-home-crop-card-clean.webp",
-    "assets/cases/modul-auth.png": "assets/cases/modul-auth-card-clean.webp"
+    "assets/cases/bakong-home-crop.png": "assets/cases/bakong-home-crop-card-clean.webp"
   });
 
   const byId = id => {
