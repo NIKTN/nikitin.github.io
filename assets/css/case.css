@@ -129,7 +129,7 @@
     .refs-block h3 { margin: 0 0 13px; color: var(--quiet); font-size: 12px; font-weight: 500; }
     .refs { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 25px; }
     .refs a { min-height: 44px; display: inline-flex; align-items: center; gap: 8px; color: var(--ink); font-size: 12px; border-bottom: 1px solid var(--line); transition: color .2s ease, border-color .2s ease; }
-    .refs a span { color: var(--accent); font-size: 15px; }
+    .refs a .icon { color: var(--accent); }
     .refs a:hover { color: var(--accent); border-color: var(--accent); }
 
     .case-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-block: 25px 34px; border-bottom: 1px solid var(--line); }
@@ -164,10 +164,10 @@
       border-radius: 3px;
       color: var(--ink);
       background: var(--surface);
-      font-size: 23px;
       cursor: pointer;
     }
     .lightbox-close:hover { color: var(--accent); border-color: var(--accent); }
+    .lightbox-close .icon { width: 20px; height: 20px; }
     .lightbox-toolbar { display: flex; align-items: center; gap: 8px; }
     .lightbox-toolbar button, .lightbox-toolbar a {
       min-width: 44px;
@@ -182,9 +182,9 @@
       background: var(--surface);
       cursor: pointer;
     }
-    .lightbox-toolbar button { font-size: 22px; line-height: 1; }
+    .lightbox-toolbar button .icon { width: 20px; height: 20px; }
     .lightbox-toolbar button:disabled { color: var(--quiet); cursor: default; opacity: .55; }
-    .lightbox-toolbar a { margin-left: auto; font-size: 13px; white-space: nowrap; }
+    .lightbox-toolbar a { margin-left: auto; gap: 6px; font-size: 13px; white-space: nowrap; }
     .lightbox-toolbar a:hover, .lightbox-toolbar button:not(:disabled):hover { border-color: var(--accent); }
     .lightbox-toolbar output { min-width: 75px; color: var(--muted); font-size: 12px; text-align: center; white-space: nowrap; }
     .lightbox-viewport {
@@ -331,6 +331,8 @@
     .gallery-card { overflow: hidden; border: 1px solid rgba(255,255,255,.09); border-radius: 16px; background: var(--surface-raised); }
     .gallery-open { padding: 10px; background: var(--surface-raised); }
     .gallery-open img { border-radius: 10px; }
+    .gallery-card.dark-cutout .gallery-image-frame { display: block; overflow: hidden; border-radius: 10px; background: #3b3b3b; }
+    .gallery-card.dark-cutout .gallery-open img { clip-path: url(#keycount-phone-cutout); }
     .gallery-card figcaption { padding: 12px 13px; border: 0; color: var(--muted); }
     .zoom-hint { color: var(--accent); }
     .result-section {
@@ -415,7 +417,7 @@
       font-weight: 500;
       white-space: nowrap;
     }
-    .case-hero-jump span { color: var(--accent); font-size: 18px; }
+    .case-hero-jump .icon { color: var(--accent); }
     .case-hero-jump:hover { color: var(--accent); }
     @media (max-width: 900px) {
       .case-hero-summary { flex-direction: column; align-items: flex-start; gap: 8px; }

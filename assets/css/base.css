@@ -95,6 +95,21 @@
     a { color: inherit; text-decoration: none; }
     button { color: inherit; font: inherit; }
     img { max-width: 100%; }
+    .icon {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      flex: none;
+      vertical-align: -.2em;
+      background-color: currentColor;
+      -webkit-mask: var(--icon-image) center / contain no-repeat;
+      mask: var(--icon-image) center / contain no-repeat;
+    }
+    .icon-up-right { --icon-image: url("../icons/arrow-up-right.svg"); }
+    .icon-down { --icon-image: url("../icons/arrow-down.svg"); }
+    .icon-close { --icon-image: url("../icons/close.svg"); }
+    .icon-plus { --icon-image: url("../icons/plus.svg"); }
+    .icon-minus { --icon-image: url("../icons/minus.svg"); }
     ::selection { color: var(--accent-ink); background: var(--accent); }
     :focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
     .shell { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }

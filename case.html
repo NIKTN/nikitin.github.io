@@ -9,13 +9,21 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/base.css?v=20261011-logo-5">
-  <link rel="stylesheet" href="assets/css/case.css?v=20261011-clean-previews-1">
-  <script src="assets/js/case.js?v=20261012-modul-single-1" defer></script>
+  <link rel="stylesheet" href="assets/css/base.css?v=20261012-icons-1">
+  <link rel="stylesheet" href="assets/css/case.css?v=20261012-gallery-2">
+  <script src="assets/js/case.js?v=20261012-gallery-2" defer></script>
   <script src="assets/js/page-grid.js?v=20261010-mobile-grid-autoplay-1" defer></script>
 </head>
 <body class="has-page-grid">
   <div class="page-grid" aria-hidden="true"><canvas class="page-grid-canvas"></canvas></div>
+  <svg width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <clipPath id="keycount-phone-cutout" clipPathUnits="objectBoundingBox">
+        <rect x=".18" y=".072" width=".30" height=".855" rx=".04" ry=".05"/>
+        <rect x=".52" y=".072" width=".30" height=".855" rx=".04" ry=".05"/>
+      </clipPath>
+    </defs>
+  </svg>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
   <header class="case-header">
     <div class="shell header-inner">
@@ -41,7 +49,7 @@
       <p class="case-category" id="case-kicker" data-motion="left" style="--motion-delay: 175ms"></p>
       <div class="case-hero-summary">
         <p class="case-deck" id="case-deck" data-motion="left" style="--motion-delay: 245ms"></p>
-        <a class="case-hero-jump" href="#gallery-title" data-motion="right" style="--motion-delay: 300ms">Смотреть материалы проекта <span aria-hidden="true">↓</span></a>
+        <a class="case-hero-jump" href="#gallery-title" data-motion="right" style="--motion-delay: 300ms">Смотреть материалы проекта <span class="icon icon-down" aria-hidden="true"></span></a>
       </div>
       <figure class="case-hero-media" data-motion="bottom" style="--motion-delay: 130ms">
         <img id="hero-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%201980%201500'%3E%3C/svg%3E" width="1980" height="1500" alt="" decoding="async">
@@ -93,20 +101,20 @@
 
     <nav class="case-navigation" aria-label="Навигация по кейсам">
       <a href="index.html#work" data-motion="left"><small>Вернуться</small><strong>Все проекты</strong></a>
-      <a class="next-case" id="next-case" href="#" data-motion="right"><small>Следующий кейс</small><strong><span id="next-title"></span> <span aria-hidden="true">↗</span></strong></a>
+      <a class="next-case" id="next-case" href="#" data-motion="right"><small>Следующий кейс</small><strong><span id="next-title"></span> <span class="icon icon-up-right" aria-hidden="true"></span></strong></a>
     </nav>
   </main>
 
   <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption">
     <div class="lightbox-header">
       <p id="lightbox-caption"></p>
-      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Закрыть изображение">×</button>
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Закрыть изображение"><span class="icon icon-close" aria-hidden="true"></span></button>
     </div>
     <div class="lightbox-toolbar" role="group" aria-label="Масштаб изображения">
-      <button id="lightbox-zoom-out" type="button" aria-label="Уменьшить изображение" disabled>−</button>
+      <button id="lightbox-zoom-out" type="button" aria-label="Уменьшить изображение" disabled><span class="icon icon-minus" aria-hidden="true"></span></button>
       <output id="lightbox-zoom-level" aria-live="polite">По ширине</output>
-      <button id="lightbox-zoom-in" type="button" aria-label="Увеличить изображение" disabled>+</button>
-      <a id="lightbox-original" href="#" target="_blank" rel="noopener noreferrer">Оригинал ↗</a>
+      <button id="lightbox-zoom-in" type="button" aria-label="Увеличить изображение" disabled><span class="icon icon-plus" aria-hidden="true"></span></button>
+      <a id="lightbox-original" href="#" target="_blank" rel="noopener noreferrer">Оригинал <span class="icon icon-up-right" aria-hidden="true"></span></a>
     </div>
     <div class="lightbox-viewport" id="lightbox-viewport" tabindex="0" aria-label="Область просмотра изображения">
       <img id="lightbox-image" alt="Увеличенное изображение" decoding="async">
@@ -116,7 +124,7 @@
 
   <footer class="shell site-footer">
     <p>© 2026 · Владимир Никитин</p>
-    <p><a href="mailto:ux.nikitin@gmail.com">Email</a> · <a href="https://t.me/niki7in" target="_blank" rel="noopener noreferrer">Telegram ↗</a></p>
+    <p><a href="mailto:ux.nikitin@gmail.com">Email</a> · <a href="https://t.me/niki7in" target="_blank" rel="noopener noreferrer">Telegram <span class="icon icon-up-right" aria-hidden="true"></span></a></p>
   </footer>
 </body>
 </html>

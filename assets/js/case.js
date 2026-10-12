@@ -45,7 +45,7 @@
       process: [["01", "Разделы", "Разделил приложение на обзор активов, подключённые аккаунты и настройки."], ["02", "Переходы", "Отразил вход, добавление источника и основные переходы в user flow."], ["03", "Состояния", "Проработал обзор активов, список аккаунтов и пустое состояние без подключений."], ["04", "Передача", "После согласования сценариев подготовил визуальные макеты части MVP для разработки."]],
       galleryTitle: "От схемы сценариев к экранам",
       galleryIntro: "Три опубликованных материала показывают структуру продукта, обзор активов и состояния раздела аккаунтов.",
-      gallery: [{src:"assets/cases/keycount-userflow.png",alt:"Карта сценариев Keycount с разделами активов, аккаунтов и настроек",caption:"01 · Карта пользовательских сценариев",description:"Схема связывает вход в приложение с тремя основными разделами: активы, аккаунты и настройки. По ней видно, как организованы переходы до отрисовки экранов.",wide:true},{src:"assets/cases/keycount-exchanges.png",alt:"Экраны Keycount с обзором активов, бирж и динамики",caption:"02 · Обзор активов",description:"Экраны показывают разные представления финансовых данных: общую картину, биржи и динамику активов."},{src:"assets/cases/keycount-accounts.png",alt:"Список подключённых карт и бирж рядом с пустым состоянием Keycount",caption:"03 · Аккаунты и пустое состояние",description:"Рядом показаны два состояния одного раздела: подключённые счета и экран без добавленных источников."}],
+      gallery: [{src:"assets/cases/keycount-userflow.png",alt:"Карта сценариев Keycount с разделами активов, аккаунтов и настроек",caption:"01 · Карта пользовательских сценариев",description:"Схема связывает вход в приложение с тремя основными разделами: активы, аккаунты и настройки. По ней видно, как организованы переходы до отрисовки экранов.",wide:true},{src:"assets/cases/keycount-exchanges.png",alt:"Экраны Keycount с обзором активов, бирж и динамики",caption:"02 · Обзор активов",description:"Экраны показывают разные представления финансовых данных: общую картину, биржи и динамику активов."},{src:"assets/cases/keycount-accounts.png",alt:"Список подключённых карт и бирж рядом с пустым состоянием Keycount",caption:"03 · Аккаунты и пустое состояние",description:"Рядом показаны два состояния одного раздела: подключённые счета и экран без добавленных источников.",webp:false,darkCutout:true}],
       resultTitle: "Согласовал сценарии и передал часть MVP в разработку",
       result: "Подготовил архитектуру, user flow, прототипы и визуальные макеты части проекта. В открытом кейсе можно проследить связь между схемой разделов и тремя группами экранов.",
       factLabel: "Что показано",
@@ -215,7 +215,7 @@
     const fragment = document.createDocumentFragment();
     items.forEach((item, index) => {
       const figure = document.createElement("figure");
-      figure.className = ["gallery-card", item.wide && "wide", item.showcase && "showcase", item.screen && "screen"].filter(Boolean).join(" ");
+      figure.className = ["gallery-card", item.wide && "wide", item.showcase && "showcase", item.screen && "screen", item.darkCutout && "dark-cutout"].filter(Boolean).join(" ");
       setMotion(figure, "bottom", index * 75);
 
       const button = document.createElement("button");
@@ -231,7 +231,14 @@
       image.decoding = "async";
       setImageDimensions(image, item.src);
       setPreviewSource(image, item.src, item.webp !== false);
-      button.append(image);
+      if (item.darkCutout) {
+        const frame = document.createElement("span");
+        frame.className = "gallery-image-frame";
+        frame.append(image);
+        button.append(frame);
+      } else {
+        button.append(image);
+      }
 
       const caption = document.createElement("figcaption");
       caption.append(
@@ -255,7 +262,7 @@
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       setMotion(link, "bottom", index * 60);
-      link.append(document.createTextNode(item.label), createTextElement("span", "", "↗"));
+      link.append(document.createTextNode(item.label), createTextElement("span", "icon icon-up-right", ""));
       link.lastElementChild.setAttribute("aria-hidden", "true");
       fragment.append(link);
     });

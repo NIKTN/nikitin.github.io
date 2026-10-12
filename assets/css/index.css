@@ -28,9 +28,9 @@
       background: transparent;
       cursor: pointer;
     }
-    .menu-toggle span { width: 17px; height: 1.5px; display: block; background: var(--ink); transition: transform .2s ease; }
-    .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3.25px) rotate(45deg); }
-    .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-3.25px) rotate(-45deg); }
+    .menu-toggle span { width: 18px; height: 1.8px; display: block; border-radius: 2px; background: var(--ink); transition: transform .2s ease; }
+    .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3.4px) rotate(45deg); }
+    .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-3.4px) rotate(-45deg); }
 
     .hero {
       display: grid;
@@ -81,7 +81,7 @@
       font-weight: 650;
       transition: background .2s ease, border-color .2s ease, transform .2s ease;
     }
-    .button-primary .arrow { font-size: 17px; line-height: 1; }
+    .button-primary .icon { width: 18px; height: 18px; }
 
     .section { padding-block: clamp(78px, 10vw, 132px); border-top: 1px solid var(--line); }
     .section-heading {
@@ -211,7 +211,7 @@
       border-bottom: 1px solid var(--accent);
       transition: color .2s ease, gap .2s ease;
     }
-    .project-link span { color: var(--accent); font-size: 16px; }
+    .project-link .icon { color: var(--accent); }
     .project-card:hover .project-link { gap: 18px; color: var(--accent); }
     .project-card[hidden] { display: none !important; }
 
@@ -436,9 +436,9 @@
       color: var(--ink);
       background: var(--surface);
     }
-    .project-link span { color: var(--accent); }
+    .project-link .icon { color: var(--accent); }
     .project-card:hover .project-link { color: var(--accent-ink); border-color: var(--accent); background: var(--accent); }
-    .project-card:hover .project-link span { color: var(--accent-ink); }
+    .project-card:hover .project-link .icon { color: var(--accent-ink); }
 
     .principles { padding: 7px 18px; border: 1px solid rgba(255,255,255,.09); border-radius: 16px; background: var(--surface-raised); }
     .principle { border-color: var(--line); }
@@ -616,7 +616,7 @@
       font-size: 14px;
       font-weight: 600;
     }
-    .contact-primary .arrow { font-size: 17px; }
+    .contact-primary .icon { width: 18px; height: 18px; }
     .contact-alternatives {
       grid-column: 2;
       grid-row: 2;
@@ -632,6 +632,7 @@
       min-height: 44px;
       display: inline-flex;
       align-items: flex-start;
+      gap: 5px;
       color: var(--muted);
       font-size: 16px;
       font-weight: 500;
